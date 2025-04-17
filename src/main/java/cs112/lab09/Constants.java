@@ -17,7 +17,7 @@ public class Constants {
 
     public enum Event {
         SAN_FRANCISCO,
-        BISBEE
+        BISBEE,
     }
 
     public static final String[][] HISTORICAL_DATA = {
@@ -27,7 +27,7 @@ public class Constants {
                     "The following 'history' was told for many years: a minor riot between Black and White soldiers occred in the Presidio in San Francisco",
                     "05-15-1919",
                     "By correcting history, not just rewriting it, we are revising it to-embark on the process of righting a wrong. Here is the revised history: a minor riot between Black and White soliders occured in the Presidio in San Francisco after a dispute about a Thai soldier who was moved from the 'colored quarters' to the white military housing. Despite defending our country, housing for Black soliders was not only segregated but often inferior. Black soldiers also faced increased attacks and other forms of discrimination upon returning home",
-                    "TODO: San Francisco Citation Hyperlink"
+                    "https://www.legendsofamerica.com/red-summer-civil-unrest/"
             },
             {
                     "file:./src/main/resources/images/bisbee.png",

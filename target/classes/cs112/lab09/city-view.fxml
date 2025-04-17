@@ -7,16 +7,34 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs112.lab09.controllers.CityController">
    <children>
-      <ImageView fx:id="imageView" fitHeight="210.0" fitWidth="200.0" layoutX="66.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
-      <VBox layoutX="346.0" layoutY="19.0" prefHeight="373.0" prefWidth="226.0">
-         <children>
-            <Label fx:id="locationLabel" prefHeight="62.0" prefWidth="226.0" text="Location" />
-            <Label fx:id="dateLabel" prefHeight="62.0" prefWidth="226.0" text="Date" />
-            <Label fx:id="descriptionLabel" prefHeight="62.0" prefWidth="226.0" text="Description" />
-            <Label fx:id="revisedDescriptionLabel" prefHeight="62.0" prefWidth="226.0" text="Revised Description" />
-            <Hyperlink fx:id="source" text="Source" />
-         </children>
-      </VBox>
-      <Button layoutX="239.0" layoutY="407.0" mnemonicParsing="false" onAction="#onClosePopup" prefHeight="38.0" prefWidth="138.0" text="Close" />
+      <BorderPane layoutX="8.0" prefHeight="465.0" prefWidth="589.0">
+         <left>
+            <ImageView fx:id="cityImageView" fitHeight="224.0" fitWidth="268.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <VBox alignment="CENTER" prefHeight="438.0" prefWidth="272.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="descriptionLabel" alignment="CENTER" text="Label" />
+                  <Label fx:id="revisedLabel" layoutX="10.0" layoutY="10.0" text="Label" />
+                  <Hyperlink fx:id="sourceLink" text="Hyperlink" />
+               </children>
+            </VBox>
+         </right>
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="cityLabel" alignment="CENTER" text="Label" />
+                  <Label fx:id="dateLabel" alignment="CENTER" text="Label" />
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleClose" text="Close" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
    </children>
 </Pane>
